@@ -1,0 +1,28 @@
+.grid-container {
+  position: absolute;
+  left: 12.5%;
+  width: 75%;
+}
+
+.sites-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 0;
+}
+
+.sites-box{
+  display: block;
+  outline: 1px solid black;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sites-text {
+  display: block;
+  position: absolute;
+  bottom: 1.5em;
+  width: 31.4%;
+  text-align: center;
+}
