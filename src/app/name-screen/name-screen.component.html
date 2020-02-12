@@ -1,0 +1,10 @@
+<div *ngIf="!nameSubmitted">
+  <h3>Please enter your name to begin</h3>
+  <label>
+    name:
+    <input id="nameBox" [(ngModel)]="name" (keyup)="onKey($event)" />
+    <button (click)="showWelcome()">Submit</button>
+  </label>
+</div>
+
+<app-welcome-screen [name]="name" *ngIf ="nameSubmitted"></app-welcome-screen>
